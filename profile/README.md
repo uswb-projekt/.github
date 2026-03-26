@@ -1,4 +1,4 @@
-## 📦 System obsługi zamówień z dostawą
+# 📦 System obsługi zamówień z dostawą
 
 Projekt realizowany w ramach zajęć „Usługi sieciowe w biznesie”.
 
