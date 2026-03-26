@@ -21,7 +21,6 @@ W przypadku pierwszego zamówienia klienta wymagane jest utworzenie konta w syst
 System umożliwia również obsługę płatności za zamówienia, zarówno online, jak i przy odbiorze. Rejestrowane są informacje o płatności, takie jak kwota, metoda płatności oraz status transakcji.
 
 ## Diagram klas
-<img width="2558" height="1247" alt="Diagram_klas" src="https://github.com/user-attachments/assets/3c9be480-93e0-4d53-97b0-f3ef1a75f42e" />
 
 ### Komentarz
 
