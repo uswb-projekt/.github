@@ -1,0 +1,49 @@
+Kod diagramu przypadków użycia do https://www.planttext.com
+
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Klient" as klient
+actor "Kurier" as kurier
+actor "Administrator" as admin
+actor "System" as sys <<Automatyzacja>>
+
+package "System zamawiania i dostaw jedzenia" {
+  
+  usecase "Utworzenie konta" as UC1
+  usecase "Składanie zamówienia" as UC2
+  usecase "Opłacenie zamówienia" as UC3
+  usecase "Śledzenie statusu zamówienia" as UC4
+  usecase "Zarządzanie adresami dostawy" as UC5
+  usecase "Przeglądanie historii zamówień" as UC6
+
+  usecase "Aktualizacja statusu dostępności" as UC7
+  usecase "Odbiór zamówienia z lokalu" as UC8
+  usecase "Dostarczenie zamówienia do klienta" as UC9
+
+  usecase "Dodanie restauracji/sklepu" as UC10
+  usecase "Zarządzanie ofertą produktową" as UC11
+
+  usecase "Przypisanie zamówienia do kuriera" as UC12
+  usecase "Rejestrowanie czasów dostaw" as UC13
+}
+
+klient --> UC1
+klient --> UC2
+klient --> UC3
+klient --> UC4
+klient --> UC5
+klient --> UC6
+
+kurier --> UC7
+kurier --> UC8
+kurier --> UC9
+
+admin --> UC10
+admin --> UC11
+
+sys --> UC12
+sys --> UC13
+
+@enduml
