@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Administrator" as admin
+actor "Pracownik / Własciciel" as pracownik
+
+package "Kontekst: Restauracje" {
+  usecase "Dodanie restauracji/sklepu" as UC1
+  usecase "Zarzadzanie godzinami otwarcia" as UC2
+  usecase "Zarzadzanie pracownikami lokalu" as UC3
+  usecase "Odbiór zlecenia do realizacji" as UC4
+}
+
+admin --> UC1
+admin --> UC3
+
+pracownik --> UC2
+pracownik --> UC4
+@enduml
