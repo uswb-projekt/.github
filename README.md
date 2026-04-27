@@ -1,3 +1,4 @@
+<img width="450" height="369" alt="Diagram Przypadków Użycia - Zamówienia" src="https://github.com/user-attachments/assets/f27de419-35a3-4cfa-b67c-5da0bc21db58" />
 # System obsługi zamówień z dostawą
 
 ## Brudnopis
@@ -41,6 +42,9 @@ Dodatkowo, proces finalizuje płatność. Każde zamówienie posiada powiązaną
 
 ### Kontekst Zamówienie
 <img width="1308" height="730" alt="zamówienie" src="https://github.com/user-attachments/assets/2e49ff10-275d-4b89-bfac-034fb6736537" />
+<img width="450" height="369" alt="Diagram Przypadków Użycia - Zamówienia" src="https://github.com/user-attachments/assets/7939c932-290a-4dfc-9f9d-ea7ce405f3eb" />
 
 ### Kontekst Dostarczanie
 <img width="1195" height="439" alt="dostarczanie" src="https://github.com/user-attachments/assets/f6a5be9b-403c-4b0e-837d-891f209f6271" />
+<img width="483" height="563" alt="Diagram Przypadków Użycia - Dostarczanie" src="https://github.com/user-attachments/assets/74fb66dc-e147-45d7-8506-ee364c38f890" />
+
