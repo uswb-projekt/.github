@@ -1,0 +1,96 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Klient" as klient
+actor "Kurier" as kurier
+actor "Administrator / Marketing" as admin
+actor "Pracownik Lokalu" as pracownik
+actor "Pracownik BOK" as support
+actor "System" as sys <<Automatyzacja>>
+
+package "Kontekst: Autentykacja" {
+  usecase "Utworzenie konta" as UC_A1
+  usecase "Logowanie do systemu" as UC_A2
+  usecase "Zarzadzanie profilem" as UC_A3
+}
+
+package "Kontekst: Zamówienia" {
+  usecase "Skladanie zamówienia" as UC_Z1
+  usecase "Sledzenie statusu" as UC_Z2
+  usecase "Historia zamówien" as UC_Z3
+}
+
+package "Kontekst: Oferta" {
+  usecase "Zarzadzanie oferta (menu)" as UC_O1
+  usecase "Przegladanie menu" as UC_O2
+}
+
+package "Kontekst: Dostarczanie" {
+  usecase "Zarzadzanie adresami" as UC_D1
+  usecase "Aktualizacja dostepnosci" as UC_D2
+  usecase "Odbiór z lokalu" as UC_D3
+  usecase "Dostarczenie do klienta" as UC_D4
+  usecase "Przypisanie kuriera i czasów" as UC_D5
+}
+
+package "Kontekst: Platnosci" {
+  usecase "Oplacenie zamówienia" as UC_P1
+  usecase "Weryfikacja platnosci" as UC_P2
+}
+
+package "Kontekst: Restauracja" {
+  usecase "Dodanie restauracji" as UC_R1
+  usecase "Zarzadzanie personelem/godzinami" as UC_R2
+  usecase "Odbiór zlecenia do realizacji" as UC_R3
+}
+
+package "Kontekst: Marketing" {
+  usecase "Zarzadzanie promocjami" as UC_M1
+  usecase "Aplikowanie kodu" as UC_M2
+}
+
+package "Kontekst: Reklamacje" {
+  usecase "Zgloszenie reklamacji" as UC_Rek1
+  usecase "Rozpatrywanie zgłoszenia" as UC_Rek2
+}
+
+' Relacje Klient
+klient --> UC_A1
+klient --> UC_A2
+klient --> UC_A3
+klient --> UC_Z1
+klient --> UC_Z2
+klient --> UC_Z3
+klient --> UC_O2
+klient --> UC_D1
+klient --> UC_P1
+klient --> UC_M2
+klient --> UC_Rek1
+
+' Relacje Kurier
+kurier --> UC_A2
+kurier --> UC_D2
+kurier --> UC_D3
+kurier --> UC_D4
+
+' Relacje Administrator / Marketing
+admin --> UC_A2
+admin --> UC_R1
+admin --> UC_O1
+admin --> UC_M1
+
+' Relacje Pracownik Lokalu
+pracownik --> UC_A2
+pracownik --> UC_R2
+pracownik --> UC_R3
+
+' Relacje Pracownik BOK
+support --> UC_A2
+support --> UC_Rek2
+
+' Relacje System
+sys --> UC_D5
+sys --> UC_P2
+
+@enduml
