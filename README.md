@@ -38,3 +38,9 @@ Dodatkowo, proces finalizuje płatność. Każde zamówienie posiada powiązaną
 <img width="493" height="1131" alt="image" src="https://github.com/user-attachments/assets/faa830de-c21f-45af-a901-c808b99d7d25" />
 
 ## Model projektowy w stylu Domain-Driven Design
+
+### Kontekst Zamówienie
+<img width="1308" height="730" alt="zamówienie" src="https://github.com/user-attachments/assets/2e49ff10-275d-4b89-bfac-034fb6736537" />
+
+### Kontekst Dostarczanie
+<img width="1195" height="439" alt="dostarczanie" src="https://github.com/user-attachments/assets/f6a5be9b-403c-4b0e-837d-891f209f6271" />
