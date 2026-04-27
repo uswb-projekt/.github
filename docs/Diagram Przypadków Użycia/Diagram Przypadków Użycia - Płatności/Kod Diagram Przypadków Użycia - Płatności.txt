@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Klient" as klient
+actor "System" as sys <<Automatyzacja>>
+
+package "Kontekst: Platności" {
+  usecase "Wybór metody platnosci" as UC1
+  usecase "Oplacenie zamówienia" as UC2
+  usecase "Weryfikacja statusu transakcji" as UC3
+}
+
+klient --> UC1
+klient --> UC2
+
+sys --> UC3
+@enduml
